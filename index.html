@@ -7,19 +7,24 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <title>Document</title>
   <style>
-  body{
-    font-family: helvetica;
-    margin: 0;
-    padding: 0;
-  }
+    body{
+      font-family: helvetica;
+      margin: 0;
+      padding: 0;
+    }
     header img{
       width:50px;
       height: 50px;
       object-fit: cover;
-      padding:10px;
+      padding:15px;
     }
     header{
-      background-color:#111;
+      /* background-color:#111; */
+      background: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0.7)),url(images/bg.jpg);
+      height: 90vh;
+      width: 100vw;
+      background-size: cover;
+      background-position: bottom;
       display: grid;
       grid-template-columns: 50px 3fr auto;
     }
@@ -27,28 +32,34 @@
       font-family: Ubuntu, sans-serif;
       color:#61dafa;
       margin: 0;
-      padding: 20px;
+      padding: 25px;
       font-size: 1.5rem;
+    }
+    nav{
     }
     nav ul{
       margin:0;
-      padding:10px;
+      padding: 10px;
+      height: 4rem;
       list-style-type: none;
       display: flex;
+      align-content: center;
       justify-content: flex-end;
     }
+    nav ul li{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     nav ul li a{
+      line-height: 1rem;
       display: block;
       color:#eee;
       padding:20px;
       text-decoration: none;
     }
     header div{
-      background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)),url(images/bg.jpg);
-      height: 90vh;
-      width: 100vw;
-      background-size: cover;
-      background-position: bottom;
+
     }
   </style>
 
