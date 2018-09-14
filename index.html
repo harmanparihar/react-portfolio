@@ -21,12 +21,13 @@
     header{
       /* background-color:#111; */
       background: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0.7)),url(images/bg.jpg);
-      height: 90vh;
+      height: 100vh;
       width: 100vw;
       background-size: cover;
       background-position: bottom;
       display: grid;
       grid-template-columns: 50px 3fr auto;
+      grid-template-rows:4rem 1fr;
     }
     header h1{
       font-family: Ubuntu, sans-serif;
@@ -35,7 +36,16 @@
       padding: 25px;
       font-size: 1.5rem;
     }
-    nav{
+    .bg{
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      font-size: 4rem;
+      grid-column: 2;
+      color:#61dafa;
+    }
+    .bg span{
+      font-size: 6rem;
     }
     nav ul{
       margin:0;
@@ -58,8 +68,8 @@
       padding:20px;
       text-decoration: none;
     }
-    header div{
-
+    .resource{
+      height: 100vh;
     }
   </style>
 
@@ -78,10 +88,12 @@
       </ul>
     </nav>
     <div class="bg">
-
+      All you need to know about <span>React!</span>
     </div>
     </header>
+    <div class="resource">
 
+    </div>
   </div>
 </body>
 </html>
