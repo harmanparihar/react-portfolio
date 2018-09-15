@@ -130,7 +130,9 @@ h2{
   }
 }
 @media screen and (max-width:600px){
-
+  header{
+    height: 70vw;
+  }
   #resource img{
     width: 130px;
     height: auto;
