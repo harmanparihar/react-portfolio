@@ -68,6 +68,24 @@ nav ul li a{
   padding: 50px ;
   min-height: 50vh;
 }
+#overview div{
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+  color:#222;
+}
+#overview div,#overview h1,#overview h3{
+  font-family: 'Roboto', sans-serif;
+
+  color:#111;
+}
+#overview{
+  text-align: center;
+
+}
+#overview img{
+  width: 220px;
+  height: auto;
+}
 #resource img{
   width: 100%;
   max-width:250px;
@@ -87,6 +105,9 @@ nav ul li a{
   display: grid;
   justify-content: center;
   align-items: center;
+}
+#resource{
+  background: linear-gradient(to bottom,rgba(250,250,250,1),rgba(250,250,250,0.8)),url(images/bg1.jpg);
 }
 /* ul li a{
   display: grid;
