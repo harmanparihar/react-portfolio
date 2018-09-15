@@ -66,12 +66,14 @@ nav ul li a{
   min-height: 50vh;
 }
 #resource img{
-  width:250px;
+  width: 100%;
+  max-width:250px;
 }
 .f{
   width: 150px !important;
 }
 #resource ul{
+  padding: 0;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
@@ -94,4 +96,46 @@ h2{
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   text-align: center;
+}
+@media screen and (max-width:1000px){
+
+  #resource img{
+    width: 200px;
+    height: auto;
+  }
+  .f{
+    width: 75px !important;
+  }
+  #resource ul li{
+    height: 130px;
+  }
+
+}
+@media screen and (max-width:800px){
+  nav{
+    display: none;
+  }
+  .bg{
+    grid-column: 2/4;
+  }
+}
+@media screen and (max-width:600px){
+
+  #resource img{
+    width: 150px;
+    height: auto;
+  }
+  .f{
+    width: 100px !important;
+  }
+  #resource ul li{
+    height: 110px;
+  }
+  .bg{
+    font-size: 2.5rem;
+  }
+  .bg span{
+    font-size: 4rem;
+  }
+
 }
