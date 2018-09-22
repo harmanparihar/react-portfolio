@@ -88,17 +88,16 @@ nav ul li a{
 .diagram{
   text-align: center;
 }
-#overview p{
-  max-width: 800px;
-  margin: 20px auto;
-  text-align: justify;
-
-}
 #overview{
   max-width: 800px;
   margin: auto;
   font-size: 1.15rem;
   line-height: 2rem;
+}
+#overview p{
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: justify;
 }
 #overview ul{
   max-width: 800px;
