@@ -63,27 +63,55 @@ nav ul li a{
   padding:20px;
   text-decoration: none;
 }
-#resource, #overview{
+#resource, #about, #overview{
   padding: 50px ;
   min-height: 50vh;
 }
-#overview div{
+#about div{
   line-height: 2.5rem;
   font-size: 1.4rem;
   color:#222;
 }
-#overview div,#overview h1,#overview h3{
+#about div,#about h1,#about h3{
   font-family: 'Roboto', sans-serif;
 
   color:#111;
 }
-#overview{
+#about{
   text-align: center;
 
 }
-#overview img{
+#about img{
   width: 220px;
   height: auto;
+}
+#overview {
+  text-align: center;
+}
+#overview p{
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.15rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+#overview ul{
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.15rem;
+  line-height: 2rem;
+  list-style-type: none;
+}
+#overview ul li{
+  margin: 20px auto;
+  text-align: justify;
+
+}
+#overview img{
+  margin: 20px auto;
+  padding: auto;
+  max-width: 500px;
+  width: 100%;
 }
 #resource img{
   width: 100%;
@@ -119,6 +147,15 @@ h2{
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   text-align: center;
+}
+footer{
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.2rem;
+}
+footer span{
+  color:blue;
 }
 @media screen and (max-width:1000px){
 
@@ -178,5 +215,7 @@ h2{
   .bg span{
     font-size: 4rem;
   }
-
+  #overview ul{
+    padding: 0;
+  }
 }
