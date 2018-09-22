@@ -85,15 +85,20 @@ nav ul li a{
   width: 220px;
   height: auto;
 }
-#overview {
+.diagram{
   text-align: center;
 }
 #overview p{
   max-width: 800px;
   margin: 20px auto;
+  text-align: justify;
+
+}
+#overview{
+  max-width: 800px;
+  margin: auto;
   font-size: 1.15rem;
   line-height: 2rem;
-  text-align: justify;
 }
 #overview ul{
   max-width: 800px;
@@ -156,6 +161,10 @@ footer{
 }
 footer span{
   color:blue;
+}
+#overview p h3{
+  text-align: left;
+  font-size: 1rem;
 }
 @media screen and (max-width:1000px){
 
