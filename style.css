@@ -222,6 +222,13 @@ footer span{
   .bg{
     grid-column: 2/4;
   }
+  #user_stories{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
+  }
 }
 @media screen and (max-width:600px){
   header h1{
@@ -254,5 +261,12 @@ footer span{
   }
   #overview ul{
     padding: 0;
+  }
+  #user_stories{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
   }
 }
