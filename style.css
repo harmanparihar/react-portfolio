@@ -195,6 +195,20 @@ footer span{
   text-align: left;
   margin: 0 auto;
 }
+#progress{
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+}
+#progress ul {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.15rem;
+  line-height: 2rem;
+}
+#progress img{
+  width: 100%;
+}
 @media screen and (max-width:1000px){
 
   #resource img{
@@ -207,7 +221,6 @@ footer span{
   #resource ul li{
     height: 130px;
   }
-
 }
 @media screen and (max-width:800px){
   nav ul{
