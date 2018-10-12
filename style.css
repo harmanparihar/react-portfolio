@@ -63,7 +63,7 @@ nav ul li a{
   padding:20px;
   text-decoration: none;
 }
-#resource, #about, #overview, #prototype{
+#resource, #about, #overview, #prototype, #prototype_demo{
   padding: 50px ;
   min-height: 50vh;
 }
@@ -195,7 +195,7 @@ footer span{
   text-align: left;
   margin: 0 auto;
 }
-#progress{
+#progress,#prototype_demo{
   max-width: 1000px;
   margin: auto;
   padding: 30px;
@@ -208,6 +208,13 @@ footer span{
 }
 #progress img{
   width: 100%;
+}
+.demo{
+  text-align: center;
+}
+#prototype_demo img, video{
+  max-width: 600px;
+  margin: auto;
 }
 @media screen and (max-width:1000px){
 
