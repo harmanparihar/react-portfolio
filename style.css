@@ -195,7 +195,7 @@ footer span{
   text-align: left;
   margin: 0 auto;
 }
-#progress,#prototype_demo{
+#progress{
   max-width: 1000px;
   margin: auto;
   padding: 30px;
@@ -228,7 +228,10 @@ footer span{
   margin: 20px auto;
   display: block;
 }
-#prototype_demo {
+#prototype_demo{
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
   font-size: 1.15rem;
   line-height: 2rem;
 }
