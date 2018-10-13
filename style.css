@@ -212,9 +212,18 @@ footer span{
 .demo{
   text-align: center;
 }
+.demo h3{
+  font-size: 1.5rem;
+}
+.demo div{
+  margin: 20px auto;
+}
 #prototype_demo img, video{
-  max-width: 600px;
-  margin: auto;
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+}
+#prototype_demo {
 }
 @media screen and (max-width:1000px){
 
