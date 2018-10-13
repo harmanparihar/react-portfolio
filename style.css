@@ -229,14 +229,20 @@ footer span{
   display: block;
 }
 #prototype_demo {
-
+  font-size: 1.15rem;
 }
 .rightmargin{
   margin-right: 30px;
 }
-.demodiv{
 
+h4{
+  display: inline;
+  line-height: 2.5rem;
 }
+.retro h2{
+  grid-column: 1/-1;
+}
+
 @media screen and (max-width:1000px){
 
   #resource img{
