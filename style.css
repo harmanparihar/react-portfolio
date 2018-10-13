@@ -210,20 +210,32 @@ footer span{
   width: 100%;
 }
 .demo{
+
   text-align: center;
 }
 .demo h3{
   font-size: 1.5rem;
 }
+.demo h2{
+  grid-column: 1/-1;
+}
 .demo div{
   margin: 20px auto;
 }
 #prototype_demo img, video{
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   margin: 20px auto;
+  display: block;
 }
 #prototype_demo {
+
+}
+.rightmargin{
+  margin-right: 30px;
+}
+.demodiv{
+
 }
 @media screen and (max-width:1000px){
 
