@@ -9,25 +9,52 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <title>React for Beginners</title>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script>
+  $(function(){
+    $('.scroll').click(function(e){
+    // prevent default action
+    e.preventDefault();
+    console.log("I was clicked");
+    // get id of target div (placed in href attribute of anchor element)
+    // and pass it to the scrollToElement function
+     // also, use 2000 as an argument for the scroll speed (2 seconds, 2000 milliseconds)
+    scrollToElement( $(this).attr('href'), 1500 );
+   });
+
+   var scrollToElement = function(el, ms){
+     var speed = (ms) ? ms : 600;
+     $('html,body').animate({
+         scrollTop: $(el).offset().top
+     }, speed);
+   }
+  });
+
+  </script>
 </head>
 <body>
   <div>
-    <header>
-    <img src="images/logo.png" alt="react logo">
-    <h1>React for Beginners</h1>
-    <nav>
-    <i class="fas fa-bars"></i>
-      <ul>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#prototype">Prototype</a></li>
-        <li><a href="#user_stories">User Stories</a></li>
-        <li><a href="#prototype_demo">Prototype Demo</a></li>
-        <li><a href="#resource">Resources</a></li>
-      </ul>
-    </nav>
+    <header id="header">
+      <div class="navbar">
+        <a class="scroll" href="#header"><img src="images/logo.png" alt="react logo"></a>
+        <a class="scroll" href="#header"><h1>React for Beginners</h1></a>
+        <nav>
+        <i class="fas fa-bars"></i>
+          <ul>
+            <li><a class="scroll" href="#about">About</a></li>
+            <li><a class="scroll" href="#overview">Overview</a></li>
+            <li><a class="scroll" href="#prototype">Prototype</a></li>
+            <li><a class="scroll" href="#user_stories">User Stories</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a class="scroll" href="#resource">Resources</a></li>
+          </ul>
+        </nav>
+    </div>
     <div class="bg">
       All you need to know about <span>React!</span>
-
     </div>
 
     </header>
@@ -38,6 +65,7 @@
       <div>Directed Studies - React Blog</div>
     </div>
     <div id="overview">
+      <div>
       <h2>Overview</h2>
         <h3>What is React?</h3>
       <p>
@@ -87,6 +115,7 @@
         <p>
           React is a trending technology which has a small learning curve for someone who is familiar with JavaScript. It has a huge support community, consisting of approximately 70,000 question over stack overflow. There has been an incredible growth in the number of websites that use React all over the world and this figure is predicted to increase over coming years. Some of the major companies that use React include Facebook, Instagram, Netflix and many more.
         </p>
+        </div>
     </div>
     <div id="prototype">
       <h2>Prototype</h2>
@@ -104,21 +133,23 @@
       </p>
     </div>
     <div id="user_stories">
-      <h2>User Stories</h2>
       <div>
-        <img src="images/user.jpeg" alt="user">
-        <h3>User</h3>
-        <p>As a user, I want data presented in pictorial form, so that I can avoid going through hundreds of records in the database to find trends or make conclusions regarding dataset. </p>
-      </div>
-      <div>
-        <img src="images/student.jpeg" alt="student">
-        <h3>Student</h3>
-        <p>As a student, I want interactive visualizations of global climatic change statistics, so that I can manipulate the data being represented according to my needs.</p>
-      </div>
-      <div>
-        <img src="images/teacher.jpeg" alt="teacher">
-        <h3>Instructor</h3>
-        <p>As a Geography instructor, I want an interactive dashboard on my personal blog displaying global climate change statistics, so that I can share the current trends, causes and effects with my students.</p>
+        <h2>User Stories</h2>
+        <div>
+          <img src="images/user.jpeg" alt="user">
+          <h3>User</h3>
+          <p>As a user, I want data presented in pictorial form, so that I can avoid going through hundreds of records in the database to find trends or make conclusions regarding dataset. </p>
+        </div>
+        <div>
+          <img src="images/student.jpeg" alt="student">
+          <h3>Student</h3>
+          <p>As a student, I want interactive visualizations of global climatic change statistics, so that I can manipulate the data being represented according to my needs.</p>
+        </div>
+        <div>
+          <img src="images/teacher.jpeg" alt="teacher">
+          <h3>Instructor</h3>
+          <p>As a Geography instructor, I want an interactive dashboard on my personal blog displaying global climate change statistics, so that I can share the current trends, causes and effects with my students.</p>
+        </div>
       </div>
     </div>
     <div id="progress">
