@@ -76,7 +76,7 @@ nav ul li a{
   padding:20px;
   text-decoration: none;
 }
-#resource, #about, #overview, #prototype, #prototype_demo, #user_stories{
+#resource, #about, #overview, #prototype, #prototype_demo, #user_stories,#progress{
   padding: 50px ;
   padding-top: 10%;
   padding-bottom: 0;
@@ -222,6 +222,7 @@ footer span{
   max-width: 1000px;
   margin: auto;
   padding: 30px;
+  padding-top: 8%;
 }
 #progress ul {
   max-width: 800px;
