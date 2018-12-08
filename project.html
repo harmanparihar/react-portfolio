@@ -15,20 +15,20 @@
     crossorigin="anonymous"></script>
   <script>
   $(function(){
-    $('.scroll').click(function(e){
+    $('.scrull').click(function(e){
     // prevent default action
     e.preventDefault();
-    console.log("I was clicked");
+    consule.log("I was clicked");
     // get id of target div (placed in href attribute of anchor element)
-    // and pass it to the scrollToElement function
-     // also, use 2000 as an argument for the scroll speed (2 seconds, 2000 milliseconds)
-    scrollToElement( $(this).attr('href'), 1500 );
+    // and pass it to the scrullToElement function
+     // also, use 2000 as an argument for the scrull speed (2 seconds, 2000 milliseconds)
+    scrullToElement( $(this).attr('href'), 1500 );
    });
 
-   var scrollToElement = function(el, ms){
+   var scrullToElement = function(el, ms){
      var speed = (ms) ? ms : 600;
      $('html,body').animate({
-         scrollTop: $(el).offset().top
+         scrullTop: $(el).offset().top
      }, speed);
    }
   });
@@ -39,16 +39,16 @@
   <div>
     <header id="header">
       <div class="navbar">
-        <a class="scroll" href="#header"><img src="images/logo.png" alt="react logo"></a>
-        <a class="scroll" href="#header"><h1>React for Beginners</h1></a>
+        <a class="scrull" href="#header"><img src="images/logo.png" alt="react logo"></a>
+        <a class="scrull" href="#header"><h1>React for Beginners</h1></a>
         <nav>
         <i class="fas fa-bars"></i>
           <ul>
             <li><a  href="index.html">Home</a></li>
-            <li><a class="scroll" href="#user_stories">User Stories</a></li>
-            <li><a class="scroll" href="#progress">Progress Reports</a></li>
-            <li><a class="scroll" href="#prototype_demo">Project Demo</a></li>
-            <li><a class="scroll" href="#final-checkin">Retrospectives</a></li>
+            <li><a class="scrull" href="#user_stories">User Stories</a></li>
+            <li><a class="scrull" href="#progress">Progress Reports</a></li>
+            <li><a class="scrull" href="#prototype_demo">Project Demo</a></li>
+            <li><a class="scrull" href="#final-checkin">Retrospectives</a></li>
           </ul>
         </nav>
     </div>
@@ -117,7 +117,7 @@
       <h2>40% Project Progress Report </h2>
       <h3>Retrospective of Last Week</h3>
       <ul>
-        <li>Learned MongoDB + NodeJS (Completed a course on these technologies on Lynda)</li>
+        <li>Learned MongoDB + NodeJS (Completed a course on these technulogies on Lynda)</li>
         <li>Created database schema</li>
         <li>Created a prototype for backend MongoDB + NodeJS connectivity, allowing GET, POST, PUT and DELETE requests to the server for creating, fetching, updating and deleting records.</li>
         <li>Worked on the Discussion Board Components.</li>
@@ -143,7 +143,7 @@
       <h3>What was interesting</h3>
       <ul>
         <li>Learning MongoDB</li>
-        <li>Learning how to send manual GET/POST/DELETE requests to the server using Postman tool</li>
+        <li>Learning how to send manual GET/POST/DELETE requests to the server using Postman toul</li>
       </ul>
       <h3>What would be done differently</h3>
       <ul>
@@ -270,74 +270,77 @@
         <li>Everything went well so far</li>
       </ul>
       </div>
-    </div>
-    <div id="final-checkin" class="retro">
-    <div>
-      <h2>Restrospectives</h2>
-      <div>
-        <h3>Executive Summary</h3>
-        <img src="images/rcc.png" alt="">
-        <p>I built this prototype while learning how states, properties and events interact with each other in React. It basically contains simple react components like <i>Display</i>, <i>Buttons</i> and <i>Numbers</i> that interact with each other to capture onClick event to modify the number being displayed and the final result for the arithematic expression.</p>
+      <div id="final-checkin" >
+        <div>
+          <h2>Final Check-In</h2>
+          <div style="text-align: center"><img style="border-radius:20px; margin:20px auto;" src="images/discussion-board.png" alt=""></div>
+        </div>
+      <div class="retro">
+        <h2>Restrospectives</h2>
+        <div>
+          <h3>Executive Summary</h3>
+
+          <p></p>
+        </div>
+        <div>
+          <h3>What Went Well</h3>
+          <ul>
+              <li><h4>Lynda Courses : </h4>
+              Gives a kickstart to the learning process</li>
+              <li><h4>Build a Full Stack App : </h4>
+              Used React + NodeJS + Express + MongoDB</li>
+              <li><h4>Server-side Scripting : </h4>
+              Understood how create an API, that responds to GET/POST/PUT/DELETE requests.</li>
+              <li><h4>MongoDB Connectivity : </h4>
+              Learned MongoDB. Create, Update, Read, Delete operations</li>
+              <li><h4>Google Cloud Platform : </h4>
+              Was able to understand and deploy the app</li>
+          </ul>
+        </div>
+        <div>
+          <h3>What Did Not Go Well</h3>
+          <ul>
+            <li><h4>CORS Error : </h4>
+            For security reasons, browsers restrict cross-origin HTTP requests initiated from within scripts.</li>
+
+            <li><h4>App Architecture : </h4>
+            The architecture of the app could have been planned better. That saves time and reduces complexities.</li>
+
+            <li><h4>Missing Features : </h4>
+            Some of the features could not be implemented due to lack of time.</li>
+        </ul>
+        </div>
+        <div>
+        <h3>What was interesting</h3>
+        <ul>
+          <li><h4>Building a Full Stack App : </h4>
+          Used React + NodeJS + Express + MongoDB</li>
+          <li><h4>Using POSTMAN : </h4>
+          Understood how make manual GET/POST/PUT/DELETE requests for testing.</li>
+          <li><h4>Google Cloud Platform : </h4>
+          Learned how to create VM instances and deploy your app on GCP.</li>
+          <li><h4>Debugging : </h4>
+          Learned a lot from unexpected errors; CORS, Firewall Rules etc.</li>
+        </ul>
       </div>
       <div>
-        <h3>What Went Well</h3>
-        <ol>
-            <li><h4>Lynda Courses : </h4>
-            Gives a kickstart to the learning process</li>
-            <li><h4>Build a Full Stack App : </h4>
-            Used React + NodeJS + Express + MongoDB</li>
-            <li><h4>Server-side Scripting : </h4>
-            Understood how create an API, that responds to GET/POST/PUT/DELETE requests.</li>
-            <li><h4>MongoDB Connectivity : </h4>
-            Learned MongoDB. Create, Update, Read, Delete operations</li>
-            <li><h4>Google Cloud Platform : </h4>
-            Was able to understand and deploy the app</li>
-        </ol>
+        <h3>What would be done differently </h3>
+        <ul>
+          <li><h4>StateCharts :</h4>
+          Try to make statecharts for your app to have a better understanding of your system flow.</li>
+
+          <li><h4>Use Code Splitting :</h4>
+          Code Splitting helps you use you node modules efficiently reducing the size of your react app.</li>
+
+          <li><h4>Automated Testing :</h4>
+          Would love to develop automated testing scripts using nodejs to test the app during QA phase in future.</li>
+        </ul>
       </div>
-      <div>
-        <h3>What Did Not Go Well</h3>
-        <ol>
-          <li><h4>CORS Error : </h4>
-          For security reasons, browsers restrict cross-origin HTTP requests initiated from within scripts.</li>
-
-          <li><h4>App Architecture : </h4>
-          The architecture of the app could have been planned better. That saves time and reduces complexities.</li>
-
-          <li><h4>Missing Features : </h4>
-          Some of the features could not be implemented due to lack of time.</li>
-      </ol>
       </div>
-      <div>
-      <h3>What was interesting</h3>
-      <ul>
-        <li><h4>Building a Full Stack App</h4>
-        Used React + NodeJS + Express + MongoDB</li>
-        <li><h4>Using POSTMAN</h4>
-        Understood how make manual GET/POST/PUT/DELETE requests for testing.</li>
-        <li><h4>Google Cloud Platform</h4>
-        Learned how to create VM instances and deploy your app on GCP.</li>
-        <li><h4>Debugging</h4>
-        Learned a lot from unexpected errors; CORS, Firewall Rules etc.</li>
-      </ul>
-    </div>
-    <div>
-      <h3>What would be done differently</h3>
-      <ul>
-        <li><h4>Plan Better</h4>
-        Planning your app design and architecture saves you a fortune during implementation.</li>
 
-        <li><h4>StateCharts</h4>
-        Try to make statecharts for your app to avoid complexities in future</li>
+      </div>
+    </div>
 
-        <li><h4>Time Management</h4>
-        Make most of your time.</li>
-      </ul>
-    </div>
-    </div>
-    <div>
-      <h2>Final Check-In</h2>
-    </div>
-    </div>
   </div>
   <footer>
     <div>Created by <span><a href="https://github.com/harmanparihar">Harmanpreet Kaur</a></span></div>

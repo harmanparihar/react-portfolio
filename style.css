@@ -137,6 +137,14 @@ nav ul li a{
   object-fit: cover;
   margin-bottom: 20px;
 }
+#final-checkin p{
+  max-width: 800px;
+  margin: 10px auto 20px auto;
+  margin-bottom: 30px;
+  text-align: justify;
+  font-size: 1.15rem;
+  line-height: 2rem;
+}
 
 #overview div p, #prototype p, #user_stories div p{
   max-width: 800px;
@@ -271,7 +279,10 @@ h4{
 .retro h2{
   grid-column: 1/-1;
 }
-
+#final-checkin img{
+  max-width: 800px;
+  margin: auto;
+}
 @media screen and (max-width:1000px){
 
   #resource img{
