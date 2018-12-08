@@ -138,7 +138,6 @@ nav ul li a{
   margin-bottom: 20px;
 }
 #final-checkin p{
-  max-width: 800px;
   margin: 10px auto 20px auto;
   margin-bottom: 30px;
   text-align: justify;
@@ -282,6 +281,9 @@ h4{
 #final-checkin img{
   max-width: 800px;
   margin: auto;
+}
+#final-checkin .demodiv, #final-checkin .demodiv p{
+  text-align: center !important;
 }
 @media screen and (max-width:1000px){
 
